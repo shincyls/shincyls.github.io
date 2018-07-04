@@ -1,0 +1,54 @@
+
+a {
+	text-decoration: none;
+}
+
+body {
+  font-family: Galada, Arial;
+  line-height: 1.4em;
+  background: radial-gradient(#33ccff, #ffffff);
+}
+
+h1 {
+	color: #3824bd;
+	text-align: center;
+}
+
+h3 {
+	text-align: left;
+}
+
+img.sized {
+	width: 100px;
+	height: 100px;
+	align-content: middle;
+	border-radius: 50px 0px;
+}
+
+img#round {
+	border-radius: 80px;
+}
+
+div {
+	background-color: #ffffff;
+	margin: 20px;
+	padding: 10px;
+	border: #ff11f0 dotted 5px;
+	border-radius: 20px;
+	background-opacity: 0.5;
+}
+
+article {
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  border: #000000, 3px;
+}
+
+table, th, td {
+	border: 1px dashed sienna;
+	text-align: center;
+	column-width: 100px;
+}
