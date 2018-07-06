@@ -1,92 +1,83 @@
-<!-- Skeleton HTML -->
 
 <!DOCTYPE html>
 
 <html>
-	<head>
-		<!-- Links to js and css files go here -->
-		<title>Shin's Page</title>
-		<!-- Link to CSS file -->
-		<link rel="stylesheet" href="style.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Galada" rel="stylesheet">
-	</head>
+	<header>
+		<title>Layout Design</title>
+		<link rel="stylesheet" href="style_d.css">
+		<link rel="stylesheet" href="style_m.css">
+
+		<nav>
+			<!--<img src="images/gallery/photo01.jpeg" id="logo">-->
+			<h2 class="txshadow">Liveplace</h2>
+			
+			<div class="navmenu">
+				<input class="search-input" type="text" id="search-query" placeholder="Search Property" name="q" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-1">
+				<a href="layout.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="logout.html">Logout</a>
+			</div>
+		</nav>
+
+	</header>
 
 	<body>
-			<h1>Hello I'm Shin</h1>
+		<div class="coverphoto">
+			<h1 class="txshadow">Liveplace</h1>
+			<h4 id="cover" class="txshadow">The Best Property Website in the World!</h4>
+		</div>
 
-			<!-- Spare Line -->
+			<h2 class="txshadow">Highlight Places</h2>
 
-			<section>
-
-				<div>
-					<h2>
-						My name is Shin, please find out what is cake by clicking image below.<br/>
-					</h2>
-
-					<a href="https://en.wikipedia.org/wiki/Cake" target="_blank"><img src="images/gallery/cake.jpg" style="width:120px;height:120px;border:0;border-radius:60px;margin:auto;"></a>
-				</div>
-
-				<div>
-					<h3>About Me</h3>
-						<ul>
-							<li>Home</li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-				</div>
-
-				<div>
-					<h3>Gallery</h3>
-						<img src="images/gallery/photo01.jpeg" class="sized">
-						<img src="images/gallery/photo02.jpeg" class="sized" id="round">
-						<img src="images/gallery/photo03.jpeg" class="sized">
-						<img src="images/gallery/photo04.jpeg" class="sized">
-						<img src="images/gallery/photo05.jpeg" class="sized">
-						<img src="images/gallery/photo06.jpeg" class="sized">
-				</div>
-
-				<div>
-					<h3>
-						This is my Favourite Video<br/>
-					</h3>
-
-					<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-				</div>
-
-			</section>
-
-			<!-- Spare Line -->
-
-			<div class="maintb">	
-				<h3>Table</h3>
-				<table>
-					<tr>
-						<th>No</th>
-						<th>Title</th>
-						<th>Description</th>
-					</tr>
-					<tr>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-					</tr>
-					<tr>
-						<td>7</td>
-						<td>8</td>
-						<td>9</td>
-					</tr>
-				</table>
+		<div class="articles">
+			<div class="box col-4">
+				<h3>Taman Tun Dr. Ismail</h3>
+				<p><spanclass="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
-
-			<div>
-				<div>
-					<div>
-						This is Content!
-					</div>
-				</div>
+			<div class="box col-4">
+				<h3>Damansara Kim</h3>
+				<p><spanclass="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 			</div>
+			<div class="box col-4">
+				<h3>Petaling Jaya Uptown</h3>
+				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			</div>
+		</div>
+
+		<h2 class="txshadow">Feedback</h2>
+
+		<div class="articles">
+			<div class="box col-3">
+				<img src="images/gallery/photo01.jpeg" class="potrait" margin-left: 50%;>
+				<h3>Adrian</h3>
+				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
+			</div>
+			<div class="box col-3">
+				<img src="images/gallery/photo02.jpeg" class="potrait" margin-left: 50%;>
+				<h3>Bob</h3>
+				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
+			</div>
+			<div class="box col-3">
+				<img src="images/gallery/photo03.jpeg" class="potrait" margin-left: 50%;>
+				<h3>Cathryn</h3>
+				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
+			</div>
+			<div class="box col-3">
+				<img src="images/gallery/photo04.jpeg" class="potrait" margin-left: 50%;>
+				<h3>Dominic</h3>
+				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
+			</div>
+		</div>
+
+		<h2 class="txshadow">Contact Us</h2>
 
 
 	</body>
-</html>
 
+
+	<footer>
+		<p>Copyright</p>
+	</footer>
+	
+
+</html>

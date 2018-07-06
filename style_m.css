@@ -1,0 +1,36 @@
+@media(max-width: 700px){
+
+
+
+[class*="col-"] {
+        width: 100%;
+    }
+
+body {
+	padding-top: 40px;
+}
+
+div.articles{
+	display: block;
+	justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+div.coverphoto {
+	display: none;
+}
+
+div.articles square-3-sm{
+	width: 100%;
+}
+
+div.articles rec-3-sm{
+	width: 100%;
+}
+
+
+
+
+
+}
