@@ -3,16 +3,13 @@
 
 <html>
 	<header>
-		<title>Layout Design</title>
+		<title>Next Academy Full Stack Assignment and Practice</title>
 		<link rel="stylesheet" href="style_d.css">
 		<link rel="stylesheet" href="style_m.css">
 
 		<nav>
-			<!--<img src="images/gallery/photo01.jpeg" id="logo">-->
-			<h2 class="txshadow">Liveplace</h2>
-			
+			<h2 class="txshadow">Next Academy Assignment</h2>
 			<div class="navmenu">
-				<input class="search-input" type="text" id="search-query" placeholder="Search Property" name="q" autocomplete="off" spellcheck="false" aria-autocomplete="list" aria-expanded="false" aria-owns="typeahead-dropdown-1">
 				<a href="layout.html">Home</a>
 				<a href="about.html">About</a>
 				<a href="logout.html">Logout</a>
@@ -22,56 +19,103 @@
 	</header>
 
 	<body>
-		<div class="coverphoto">
-			<h1 class="txshadow">Liveplace</h1>
-			<h4 id="cover" class="txshadow">The Best Property Website in the World!</h4>
+		<div class="coverphoto" id="titlepage">
+			<!--h1 class="txshadow">Liveplace</h1>
+			<div class="flexbox">
+ 		    	<div class="search">
+    			    <h2 class="txshadow">Click on search icon, then type and search your property.</h2>
+    				<div>
+      					<input type="text" placeholder="       Search . . ." required>
+    				</div>
+  				</div>
+			</div-->
 		</div>
 
 			<h2 class="txshadow">Highlight Places</h2>
 
 		<div class="articles">
 			<div class="box col-4">
-				<h3>Taman Tun Dr. Ismail</h3>
-				<p><spanclass="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h3 class="noshadow">Javascript: Part 2</h3>
+				<div class="block">
+					<button onclick="doFizzBuzz()">JS Pt.2: Fizz Buzz Exercise</button>
+					<button onclick="showTrip()">JS Pt.2: Object Data Type</button>
+					<button onclick="listReading()">JS Pt.2: Book Reading</button>
+					<button onclick="romanNum()">JS Pt.2: Romanization Number</button>
+					<button onclick="toRoman()">JS Pt.2: Romanization Number Method 2</button>
+					<button id="poSum">JS Pt.2: Sum of Positive Numbers</button>
+					<p id="responSum"></p>
+				</div>
 			</div>
 			<div class="box col-4">
-				<h3>Damansara Kim</h3>
-				<p><spanclass="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h3 id="box2" class="noshadow">Javascript: Interactivity</h3>
+				<div class="block">
+					<button onclick="changeTitle()">JS Interactivity: Change Title</button>
+					<button onclick="changeReset()">JS Interactivity: Clear Change</button>
+					<button onclick="headerShadow()">JS Interactivity: Header Shadow</button>
+					<button onclick="removeShadow()">JS Interactivity: Remove Shadow</button>
+				</div>
 			</div>
 			<div class="box col-4">
-				<h3>Petaling Jaya Uptown</h3>
-				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				<h3>Javascript Running Button</h3>
+				<button id="run">Catch Me If You Can :p</button>
+			</div>
+			
+		</div>
+
+		<div class="articles">
+			<div class="box col-4">
+				<h3>Javascript To Do List</h3>
+				<div id="toDo">
+					<input type='text' placeholder=' Input Here' id="inputField"><button id="addTask">Add</button></input>
+				</div>
+			</div>
+			<div class="box col-4">
+				<h3>Javascript Self Experiment 1</h3>
+				<button id="1" onclick="replyClick(this.id)">B1</button>
+				<button id="2" onclick="replyClick(this.id)">B2</button>
+				<button id="3" onclick="replyClick(this.id)">B3</button>
+				<p id="responClick"></p>
+			</div>
+			<div class="box col-4">
+				<h3>Javascript Self Experiment 2</h3>
+				<button id="1" onclick="replyClick(this.id)">B1</button>
+				<button id="2" onclick="replyClick(this.id)">B2</button>
+				<button id="3" onclick="replyClick(this.id)">B3</button>
 			</div>
 		</div>
+
+
 
 		<h2 class="txshadow">Feedback</h2>
 
 		<div class="articles">
 			<div class="box col-3">
 				<img src="images/gallery/photo01.jpeg" class="potrait" margin-left: 50%;>
-				<h3>Adrian</h3>
+				<h3>Shin</h3>
 				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
 			</div>
 			<div class="box col-3">
 				<img src="images/gallery/photo02.jpeg" class="potrait" margin-left: 50%;>
-				<h3>Bob</h3>
+				<h3>Ian</h3>
 				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
 			</div>
 			<div class="box col-3">
 				<img src="images/gallery/photo03.jpeg" class="potrait" margin-left: 50%;>
-				<h3>Cathryn</h3>
+				<h3>Masha</h3>
 				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
 			</div>
 			<div class="box col-3">
 				<img src="images/gallery/photo04.jpeg" class="potrait" margin-left: 50%;>
-				<h3>Dominic</h3>
+				<h3>Sean</h3>
 				<p><span class="redtext">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s..</p>
 			</div>
 		</div>
 
 		<h2 class="txshadow">Contact Us</h2>
 
-
+		<script src="script.js"></script>
+		<script src="script_int.js"></script>
+		
 	</body>
 
 
