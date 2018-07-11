@@ -1,25 +1,26 @@
-
+let responClick = document.getElementById('responSum');
 
 function doFizzBuzz() {
         const num = prompt("Please enter a number:", "Enter Your Number Here");  // a prompt will appear to ask you input a number
-
+        let finalAnswer = '';
 
         if(isNaN(num) === true){
-        	window.alert("The Input you entered is not a number");
+        	finalAnswer = ("The Input you entered is not a number");
         }
         else if ( num%3 === 0 && num%5 === 0 && num > 0){
-        	window.alert("It's a FizzBuzz!!!");
+        	finalAnswer = ("It's a FizzBuzz!!!");
         }
         else if ( num%3 === 0 && num > 0){
-        	window.alert("It's a Fizz!!!");
+        	finalAnswer = ("It's a Fizz!!!");
         }
         else if ( num%5 === 0 && num > 0){
-        	window.alert("It's a FizzBuzz!!!");
+        	finalAnswer = ("It's a FizzBuzz!!!");
         }
         else {
-        	window.alert("Just a Number: " + num);
+        	finalAnswer = ("Just a Number: " + num);
         }
 
+        responClick.innerHTML = finalAnswer;
     }
 
 // JS Part 2 : Data Object (Show Trip in Alert Windows)
@@ -54,17 +55,17 @@ function showTrip() {
 
    	function listPlaces() {
 
-   		let output = (trip.places.length) + " Places to Visit: \n";
+   		let output = (trip.places.length) + " Places to Visit: <br/>";
 
    		for(let i=1; i<=trip.places.length; i++) {
-   		 output = output + "* " + trip.places[i-1] + "\n";
+   		 output = output + "* " + trip.places[i-1] + "<br/>";
    		}
 
    		return output;
 
    	}
 
-   	window.alert("My Dream Trip: " + trip.location + "\nwith " + listPartners() + " for " + trip.numDays + " days. \n\n" + listPlaces());
+   	responClick.innerHTML = ("My Dream Trip: " + trip.location + "<br/>with " + listPartners() + " for " + trip.numDays + " days. <br/><br/>" + listPlaces());
 }
 
 // JS Part 2 : Reading List
@@ -79,21 +80,19 @@ const readingBook = {
 
 function listReading() {
 
-	let i = 0;
 	let status;
+  let final = '';
 
 	for(num in readingBook){
 
-		if(readingBook.alreadyRead[i] === true){
-			status = "Yes, I have read";
-		}
-		else{
-			status = "No, I have not read";
-		}
+		if(readingBook.alreadyRead[num] === true) {status = "Yes, I have read";}
+		else {status = "No, I have not read";}
 
-		console.log(readingBook.title[i] + " by " + readingBook.author[i] + " (" + status + ")");
-		i++;
+    final = final + "</br>" + (readingBook.title[num] + " by " + readingBook.author[num] + " (" + status + ")");
+
 	}
+
+  responClick.innerHTML = final;
 }
 
 
@@ -179,7 +178,6 @@ function toRoman(){
 // addOne( [3,6,9] ) ==> [4,7,10]
 
 const numberRange = [1,2,3,4,5,6,7,8,9,10];
-const numberRange2 = [2,43,62,71,90,10];
 
 function addOne(array){
 
@@ -189,25 +187,11 @@ function addOne(array){
 		array[i]++;
 		i++;
 	}
-	return array;
+
+  responClick.innerHTML = "The Array is : " + arr + "<br/>" + "The Answer is : " + sum;
+
 }
 
-console.log("New Array: " + addOne(numberRange));
-console.log("New Array: " + addOne(numberRange2));
-
-////////////////////////////////////////////////////////////////
-
-function addOne2(array){
-
-	i=0;
-
-	while(i < array.length){
-		array[i]++;
-		i++;
-	}
-}
-
-addOne2(numberRange2);
 
 ///////////////////// 7-11 Kata ////////////////////////////////
 
@@ -215,7 +199,6 @@ const numRange = [12,38,-42,5,6,-13,10,-15] //result should be 71
 
 function posSum(arr) {
 
-  const responClick = document.getElementById('responSum');
   let sum=0;
 
   for(num in arr){

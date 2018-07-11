@@ -230,6 +230,9 @@ footer p {
 	margin-top: 10px;
 }
 
+p#responClick {
+	text-align: left;
+}
 
 
 /*.flexbox {

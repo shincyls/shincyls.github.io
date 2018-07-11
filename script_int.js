@@ -71,6 +71,21 @@ function randomMargin() {
 
 }
 
+function randomMarginPct() {
+
+	let randomMrg = "";
+
+	let mrg_top = Math.floor(Math.random()*50);
+	let mrg_right = Math.floor(Math.random()*50);
+	let mrg_bottom = Math.floor(Math.random()*50);
+	let mrg_left = Math.floor(Math.random()*50);
+
+	randomMrg = mrg_top + "% " + mrg_right + "% " + mrg_bottom + "% " + mrg_left + "%";
+
+	return randomMrg;
+
+}
+
 
 ////////////////////////////////////////////////////////////
 /////////////////   Javascript Elusive Button  /////////////////
@@ -98,7 +113,7 @@ buttonMove.onmouseover = function () {
 	if(count <= 10){
 	buttonMove.innerHTML = buttonSay[count];
 	buttonMove.style.backgroundColor = randomRGB();
-	buttonMove.style.margin = randomMargin();
+	buttonMove.style.margin = randomMarginPct();
 	count++;
 	}
 	else{
