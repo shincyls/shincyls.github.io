@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+	<header>
+		<title>Next Academy Full Stack Assignment and Practice</title>
+		<link rel="stylesheet" href="style_d.css">
+		<link rel="stylesheet" href="style_gallery.css">
+
+		<nav>
+			<h2 class="txshadow">Next Gallery</h2>
+			<div class="navmenu">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="gallery.html">Gallery</a>
+				<a href="Game.html">Game</a>
+				<a href="logout.html">Logout</a>
+			</div>
+		</nav>
+	</header>
+
+	<body>
+		<h1 class="txshadow">Interactive Image Gallery</h1>
+		<div class="container">
+			<ul class="gallery">
+				<li>
+					<img src="images/gallery/photo01.jpeg" class="lb-gallery" onclick="openLightbox(this.src,0)">
+					<p class="caption">Wow! This is so beautiful!<p>
+				</li>
+				<li>
+					<img src="images/gallery/photo02.jpeg" class="lb-gallery" onclick="openLightbox(this.src,1)">
+					<p class="caption">Amazing!<p>
+				</li>
+				<li>
+					<img src="images/gallery/photo03.jpeg" class="lb-gallery" onclick="openLightbox(this.src,2)">
+					<p class="caption">Oh Jesus!<p>
+				</li>
+				<li>
+					<img src="images/gallery/photo04.jpeg" class="lb-gallery" onclick="openLightbox(this.src,3)">
+					<p class="caption">Fantastic!<p>
+				</li>
+				<li>
+					<img src="images/gallery/photo05.jpeg" class="lb-gallery" onclick="openLightbox(this.src,4)">
+					<p class="caption">Awesome!<p>
+				</li>
+				<li>
+					<img src="images/gallery/photo06.jpeg" class="lb-gallery" onclick="openLightbox(this.src,5)">
+					<p class="caption">So Good!<p>
+				</li>
+				<li>
+					<img src="images/gallery/liveplace.jpg" class="lb-gallery" onclick="openLightbox(this.src,6)">
+					<p class="caption">Wow!<p>
+				</li>
+				<li>
+					<img src="images/gallery/photo07.jpg" class="lb-gallery" onclick="openLightbox(this.src,7)">
+					<p class="caption">Wow!<p>
+				</li>
+
+			</ul>
+		</div>
+
+		<div class="modal">
+			<div class="lightbox" id="mainContainer">
+				<p id="lightbox-counter"><p>
+				<a id="lightbox-prev" href="" onclick="prevLightbox()">&lt;</a>
+					<img src="" id="stagePhoto">
+				<a id="lightbox-next" href="" onclick="nextLightbox()">&gt;</a>
+				<a id="lightbox-close" href="" onclick="closeLightbox()">X</a>
+				<p id="lightbox-caption"><p>
+			</div>
+		</div>
+
+	</body>
+
+
+	<footer>
+		<script src="script_gallery.js"></script>
+	</footer>
+
+	
+
+</html>
