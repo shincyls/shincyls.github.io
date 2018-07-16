@@ -1,0 +1,86 @@
+div.container {
+	width: 100%;
+	text-align: center;
+	color: black;
+	margin-top: 40px;
+}
+
+div.container h2{
+	color: black;
+}
+
+div.main-body {
+	display: block;
+	background-color: white;
+	display: inline-block;
+}
+
+div#left-panel, div#right-panel{
+	height: 100%;
+	text-align: center;
+}
+
+div#main-panel {
+	width: 359px;
+	padding: 5px;
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+}
+
+
+div.row1, div.row2, div.row3 {
+	display: block;
+}
+
+div.game-box {
+	display: inline-block;
+	position: relative;
+	font-size: 90px;
+	font-family: arial;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+	margin: 5px;
+	box-shadow: 0px 0px 6px grey;
+	text-shadow: 0px 0px 8px grey;
+	background-color: white;
+	transition: all .3s ease-in-out; 
+}
+
+div.game-box span{
+	position: relative;
+}
+
+div.game-box:hover {
+	box-shadow: 0px 0px 10px #1abc9c;
+	transform: scale(1.1);
+}
+
+
+#play-again, #reset{
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+}
+
+#reset {
+	background-color: gold;
+}
+
+.blinking{
+    animation:blinkingBg 1.8s infinite;
+    transition: all .3s ease-in-out; 
+    transform: scale(1.1);
+}
+
+@keyframes blinkingBg{
+    0%{     background-color: yellow;    }
+    49%{    background-color: coral; }
+    50%{    background-color: yellow; }
+    99%{    background-color: coral;  }
+    100%{   background-color: yellow;    }
+
+}
